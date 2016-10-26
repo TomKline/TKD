@@ -1,0 +1,14 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+<core-app>
+    <div>
+        <p><img src="~/img/ajax_small.gif" />  Please wait ...</p>
+    </div>
+</core-app>
+@section Scripts {
+    <script>
+        System.config({ packages: { 'app': { defaultExtension: 'js' } }, });
+        System.import('app/main').then(null, console.error.bind(console));
+    </script>
+}
